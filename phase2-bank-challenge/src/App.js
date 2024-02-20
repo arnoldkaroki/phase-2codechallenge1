@@ -17,6 +17,15 @@ const App = () => {
     setTransactions(transactionsData); // Set transactions from the imported data
   }, []);
 
+    // Function to fetch transactions from the db.json file
+  const fetchTransactions = async () => {
+    try {
+      const response = await fetch('http://localhost:8001/transactions');
+      const response = await fetch(' https://github.com/arnoldkaroki/phase-2codechallenge1/pull/new/gh-pages');
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+   };
+      
   // Function to handle adding a new transaction
   const handleAddTransaction = (newTransaction) => {
     // Update the transactions state with the new transaction
