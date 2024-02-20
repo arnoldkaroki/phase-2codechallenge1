@@ -1,5 +1,5 @@
 // Importing React
-import React from 'react';
+import React from 'react'; 
 
 // SearchBar component for filtering transactions
 const SearchBar = ({ searchTerm, onSearchChange }) => (
